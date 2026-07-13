@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Winner - Tron Game</title>
+    <link rel="stylesheet" href="./winner.css" />
+</head>
+
+<body>
+    <div class="winner-container">
+        <h1>Game Over</h1>
+        <div class="winner-name" id="winnerName">Winner</div>
+        <p class="subtitle">wins the game!</p>
+        <div class="actions">
+            <a href="index.html" class="btn">Play Again</a>
+        </div>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const winner = urlParams.get("winner");
+
+        const winnerNameEl = document.getElementById("winnerName");
+
+        if (winner === "red") {
+            winnerNameEl.textContent = "Red Player";
+            winnerNameEl.classList.add("red");
+        } else if (winner === "blue") {
+            winnerNameEl.textContent = "Blue Player";
+            winnerNameEl.classList.add("blue");
+        } else {
+            winnerNameEl.textContent = "Unknown";
+        }
+    </script>
+</body>
+
+</html>

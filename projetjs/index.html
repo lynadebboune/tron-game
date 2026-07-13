@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>SAE Prog Web</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 class="menuTitle">Tron Game</h1>
+            <div class="score">
+                Score: <span class="blueScore">0</span> -
+                <span class="redScore">0</span>
+            </div>
+        </header>
+
+        <main>
+            <div class="canvas"></div>
+        </main>
+
+        <footer>
+            <button id="playBtn" class="btn">Play</button>
+            <button id="contorlsBtn" class="btn">Controls</button>
+        </footer>
+    </div>
+
+    <section class="controlModel">
+        <div class="modal-box">
+            <h2>Controls</h2>
+
+            <div class="controls">
+                <div>
+                    <h3 class="blueText">Blue Player</h3>
+                    <div>
+                        <label for="blueUp">Up: </label>
+                        <input id="blueUp" type="text" />
+                    </div>
+                    <div>
+                        <label for="blueDown">Down: </label>
+                        <input id="blueDown" type="text" />
+                    </div>
+                    <div>
+                        <label for="blueLeft">Left: </label>
+                        <input id="blueLeft" type="text" />
+                    </div>
+                    <div>
+                        <label for="blueRight">Right: </label>
+                        <input id="blueRight" type="text" />
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="redText">Red Player</h3>
+                    <div>
+                        <label for="redUp">Up: </label>
+                        <input id="redUp" type="text" />
+                    </div>
+                    <div>
+                        <label for="redDown">Down: </label>
+                        <input id="redDown" type="text" />
+                    </div>
+                    <div>
+                        <label for="redLeft">Left: </label>
+                        <input id="redLeft" type="text" />
+                    </div>
+                    <div>
+                        <label for="redRight">Right: </label>
+                        <input id="redRight" type="text" />
+                    </div>
+                </div>
+            </div>
+
+            <button id="closeModel" class="btn">Close</button>
+        </div>
+    </section>
+
+    <script src="./js.js"></script>
+</body>
+
+</html>
